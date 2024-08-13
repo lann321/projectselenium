@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Day8_practice2">
+      <class name="automation.testsuite.Day12_dropdownlist">
         <methods>
-          <include name="findElement"/>
-          <include name="openbrowser"/>
+          <include name="openChrome"/>
+          <include name="case1_dropdownlist"/>
         </methods>
-      </class> <!-- automation.testsuite.Day8_practice2 -->
+      </class> <!-- automation.testsuite.Day12_dropdownlist -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
