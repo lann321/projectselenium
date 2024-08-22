@@ -3,15 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.BTVNday13_Login2">
+      <class name="automation.testsuite.Register_BTVNday14">
         <methods>
-          <include name="LoginPasswordInvalid"/>
-          <include name="openChrome"/>
-          <include name="LoginUsernameInvalid"/>
-          <include name="LoginLeaverBlank"/>
-          <include name="LoginSuccess"/>
+          <include name="Chinhsua"/>
+          <include name="RegisterSuccess"/>
+          <include name="openFireFox"/>
         </methods>
-      </class> <!-- automation.testsuite.BTVNday13_Login2 -->
+      </class> <!-- automation.testsuite.Register_BTVNday14 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

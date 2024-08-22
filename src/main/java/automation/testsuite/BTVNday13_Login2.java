@@ -13,9 +13,9 @@ import automation.page.LoginPage_Day13_bai2;
 public class BTVNday13_Login2 extends commonBase{
 	LoginPage_Day13_bai2 login;
 	@BeforeMethod
-	public void openChrome()
+	public void openFireFox()
 	{
-		driver = initChromeDriver(CT_PageURLs.URL_SELENIUMEAS7);
+		driver = initFirefoxDriver(CT_PageURLs.URL_SELENIUMEAS7);
 		LoginPage_Day13_bai2 login = new LoginPage_Day13_bai2(driver);
 	}
 	@Test
@@ -23,7 +23,7 @@ public class BTVNday13_Login2 extends commonBase{
 	{
 		login = new LoginPage_Day13_bai2(driver);
 		login.LoginFunction("admin@gmail.com", "12345678");
-		assertTrue(driver.findElement(By.xpath("//a[text()='Tài khoản của tôi']")).isDisplayed());
+		assertTrue(driver.findElement(By.xpath("//p[text()='Quản lý người dùng']")).isDisplayed());
 	}
 	@Test
 	public void LoginUsernameInvalid()
@@ -44,6 +44,6 @@ public class BTVNday13_Login2 extends commonBase{
 	{
 		login = new LoginPage_Day13_bai2(driver);
 		login.LoginFunction("", "");
-		assertTrue(driver.findElement(By.xpath("//span[text()='Không được để trống trường này']")).isDisplayed());
+		assertTrue(driver.findElement(By.xpath("//strong[text()='Error']")).isDisplayed());
 	}
 }
