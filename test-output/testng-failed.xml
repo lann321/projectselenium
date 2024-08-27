@@ -5,7 +5,6 @@
     <classes>
       <class name="automation.testsuite.Register_BTVNday14">
         <methods>
-          <include name="Chinhsua"/>
           <include name="RegisterSuccess"/>
           <include name="openFireFox"/>
         </methods>
