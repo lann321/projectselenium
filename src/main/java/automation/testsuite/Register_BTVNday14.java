@@ -9,35 +9,48 @@ import org.testng.annotations.Test;
 
 import automation.common.commonBase;
 import automation.constant.CT_PageURLs;
-import automation.page.EditPassword;
+
 import automation.page.RegisterFactory;
 
 public class Register_BTVNday14 extends commonBase{
-	EditPassword EditFunction;
+
 	RegisterFactory Register;
+	RegisterFactory login;
+	RegisterFactory Editfunction;
+	RegisterFactory logout;
+	
+	
 	@BeforeMethod
 	public void openFireFox()
 	{
-		driver = initChromeDriver(CT_PageURLs.URL_SELENIUMEAS5);
+		driver = initChromeDriver(CT_PageURLs.URL_ALADA);
 	}
-	@Test
+	@Test(priority = 1)
 	public void RegisterSuccess() throws InterruptedException
 	{
 		Register = new RegisterFactory(driver);
 		Thread.sleep(10000);
-		Register.RegisterFactory("ATest", "TTest@gmail.com", "TTest@gmail.com", "234566", "234566", "0365476545");
+		Register.RegisterFunction("123@", "123a@gmail.com", "123a@gmail.com", "123456", "123456", "0365476545");
 		Thread.sleep(10000);
 		assertTrue(driver.findElement(By.xpath("//h2[text()='Danh mục khóa học']")).isDisplayed());
 	}
-	@Test
+	@Test  (priority = 2)
 	public void Chinhsua()  throws InterruptedException
 	{
-		EditFunction = new EditPassword(driver);
-		// chỉnh sửa mật khẩu: email, mật khẩu hiện tại, mật khẩu mới, nhập lại mật khẩu mới 
-		EditFunction.EditPassword("lantest@gmail.com", "123456", "012345", "012345");
+		login = new RegisterFactory(driver);
+		login.Login("123a@gmail.com", "123456");
+		Thread.sleep(10000);
+		Editfunction = new RegisterFactory(driver);
+		Editfunction.EditpassFunction("123a@gmail.com", "123456", "012345");
+		
+	}
+	@Test (priority = 3)
+	public void login() throws InterruptedException
+	{
+		login = new RegisterFactory(driver);
+		login.Login("123a@gmail.com", "012345");
 		Thread.sleep(10000);
 		assertTrue(driver.findElement(By.xpath("//h2[text()='Danh mục khóa học']")).isDisplayed());
-		
 	}
 	
 }

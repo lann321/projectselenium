@@ -17,7 +17,7 @@ public class LoginTest extends commonBase {
 	public void openChromer()
 	{
 		
-		driver = initChromeDriver(CT_PageURLs.URL_SELENIUMEAS5);
+		driver = initChromeDriver(CT_PageURLs.URL_ALADA);
 		LoginPage login = new LoginPage(driver);
 	}
 	
