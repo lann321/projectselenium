@@ -12,7 +12,7 @@ public class RaiseFactory_day15 {
 	private WebDriver driver;
 	@FindBy(id = "email") WebElement Email;
 	@FindBy(id = "password") WebElement Password;
-	@FindBy(xpath = "(//div[@class='rc-anchor-center-container'])[1]") WebElement CheckBoxNotRobot;
+	@FindBy(id = "recaptcha-anchor-label") WebElement CheckBoxNotRobot;
 	
 	@FindBy(xpath = "//button[text()='Sign in']") WebElement btnSignIn;
 	

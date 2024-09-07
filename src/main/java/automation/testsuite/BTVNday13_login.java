@@ -8,7 +8,7 @@ import org.testng.annotations.Test;
 
 import automation.common.commonBase;
 import automation.constant.CT_PageURLs;
-import automation.page.LoginPage;
+import automation.page.LoginPage_alada;
 import automation.page.LoginPage_btvnday13;
 
 public class BTVNday13_login extends commonBase{
@@ -17,7 +17,7 @@ public class BTVNday13_login extends commonBase{
 	public void openChrome()
 	{
 		driver = initChromeDriver(CT_PageURLs.URL_SELENIUMEAS6);
-		LoginPage login =new LoginPage(driver);
+		LoginPage_alada login =new LoginPage_alada(driver);
 	}
 	@Test
 	public void case1_loginSuccessfull()
