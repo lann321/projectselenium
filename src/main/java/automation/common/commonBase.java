@@ -4,6 +4,7 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 import java.beans.Visibility;
 import java.time.Duration;
+import java.util.List;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -48,6 +49,24 @@ public class commonBase {
 				WebElement element = driver.findElement(locator);
 				return element;
 	}
+	
+	
+	public List<WebElement> getListWebElements(By locator)
+	{ List<WebElement> elementlist =null;
+		try {
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(initWaitTime));
+		elementlist = driver.findElements(locator);
+		return elementlist;
+		}
+		catch(Exception ex)
+		{
+			return elementlist;
+		}
+		
+	}
+	
+	
+	
 	public void clickJavScript(By locator)
 	{
 		WebElement element = getElementPresentDOM(locator);
@@ -116,5 +135,6 @@ public class commonBase {
 				return false;
 			}
 	}
+	
 }
 

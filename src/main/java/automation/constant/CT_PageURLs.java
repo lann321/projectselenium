@@ -16,4 +16,7 @@ public class CT_PageURLs {
 	public static String URL_RISE="http://rise.fairsketch.com/signin";
 	public static String URL_AUTOMATIONTESTING="https://demo.automationtesting.in/Alerts.html";
 	public static String URL_SELENIUMPRACTISE="https://seleniumpractise.blogspot.com/2019/01/alert-demo.html";
+	public static String URL_POPUPGURU99="https://demo.guru99.com/popup.php";
+	public static String URL_CODESTAR="https://codestar.vn/";
+	public static String URL_MEDIAMART="https://mediamart.vn/";
 }

@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.GURU99_BTVNDay16">
+      <class name="automation.testsuite.MediamartIframe_btvnday16">
         <methods>
-          <include name="AcceptAlert"/>
-          <include name="openFireFox"/>
+          <include name="openChrome"/>
+          <include name="VerifyIframe"/>
         </methods>
-      </class> <!-- automation.testsuite.GURU99_BTVNDay16 -->
+      </class> <!-- automation.testsuite.MediamartIframe_btvnday16 -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
