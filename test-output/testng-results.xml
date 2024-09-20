@@ -1,35 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="2" failed="2" skipped="0">
+<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-17T23:03:12 ICT" name="TestSuite" finished-at="2024-09-17T23:06:31 ICT" duration-ms="198650">
+  <suite started-at="2024-09-20T21:35:38 ICT" name="Default suite" finished-at="2024-09-20T21:36:09 ICT" duration-ms="30908">
     <groups>
     </groups>
-    <test started-at="2024-09-17T23:03:12 ICT" name="Regresstion test testsuite on chrome" finished-at="2024-09-17T23:04:45 ICT" duration-ms="92560">
-      <class name="automation.testsuite.Bepantoan_btvnday18">
-        <test-method is-config="true" signature="openFirefox(java.lang.String)[pri:0, instance:automation.testsuite.Bepantoan_btvnday18@576d5deb]" started-at="2024-09-17T23:03:12 ICT" name="openFirefox" finished-at="2024-09-17T23:03:23 ICT" duration-ms="10918" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
+    <test started-at="2024-09-20T21:35:38 ICT" name="Default test" finished-at="2024-09-20T21:36:09 ICT" duration-ms="30908">
+      <class name="automation.testsuite.TBNB">
+        <test-method is-config="true" signature="openFireFox()[pri:0, instance:automation.testsuite.TBNB@1ed6388a]" started-at="2024-09-20T21:35:38 ICT" name="openFireFox" finished-at="2024-09-20T21:36:00 ICT" duration-ms="22162" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- openFirefox -->
-        <test-method signature="CallMessage()[pri:0, instance:automation.testsuite.Bepantoan_btvnday18@576d5deb]" started-at="2024-09-17T23:03:23 ICT" name="CallMessage" finished-at="2024-09-17T23:04:32 ICT" duration-ms="69211" status="FAIL">
+        </test-method> <!-- openFireFox -->
+        <test-method signature="LoctheoDanhmuc()[pri:1, instance:automation.testsuite.TBNB@1ed6388a]" started-at="2024-09-20T21:36:00 ICT" name="LoctheoDanhmuc" finished-at="2024-09-20T21:36:09 ICT" duration-ms="8614" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [true] but found [false]]]>
+              <![CDATA[MÁY SẤY CHÉN BÁT expected [MÁY SẤY CHÉN BÁT] but found [Giá trị không khớp cho thẻ 1]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: MÁY SẤY CHÉN BÁT expected [MÁY SẤY CHÉN BÁT] but found [Giá trị không khớp cho thẻ 1]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at automation.testsuite.Bepantoan_btvnday18.CallMessage(Bepantoan_btvnday18.java:37)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at automation.testsuite.TBNB.LoctheoDanhmuc(TBNB.java:68)
 at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -61,101 +55,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- CallMessage -->
-      </class> <!-- automation.testsuite.Bepantoan_btvnday18 -->
-      <class name="automation.testsuite.DienmayHungAnh_btvnday18">
-        <test-method is-config="true" signature="openFirefox(java.lang.String)[pri:0, instance:automation.testsuite.DienmayHungAnh_btvnday18@6e6f2380]" started-at="2024-09-17T23:04:32 ICT" name="openFirefox" finished-at="2024-09-17T23:04:41 ICT" duration-ms="8561" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[chrome]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openFirefox -->
-        <test-method signature="CallZalo()[pri:0, instance:automation.testsuite.DienmayHungAnh_btvnday18@6e6f2380]" started-at="2024-09-17T23:04:41 ICT" name="CallZalo" finished-at="2024-09-17T23:04:45 ICT" duration-ms="3776" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CallZalo -->
-      </class> <!-- automation.testsuite.DienmayHungAnh_btvnday18 -->
-    </test> <!-- Regresstion test testsuite on chrome -->
-    <test started-at="2024-09-17T23:04:45 ICT" name="Regresstion test testsuite on firefox" finished-at="2024-09-17T23:06:31 ICT" duration-ms="105982">
-      <class name="automation.testsuite.Bepantoan_btvnday18">
-        <test-method is-config="true" signature="openFirefox(java.lang.String)[pri:0, instance:automation.testsuite.Bepantoan_btvnday18@1c5920df]" started-at="2024-09-17T23:04:45 ICT" name="openFirefox" finished-at="2024-09-17T23:05:02 ICT" duration-ms="16878" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openFirefox -->
-        <test-method signature="CallMessage()[pri:0, instance:automation.testsuite.Bepantoan_btvnday18@1c5920df]" started-at="2024-09-17T23:05:02 ICT" name="CallMessage" finished-at="2024-09-17T23:05:11 ICT" duration-ms="8889" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CallMessage -->
-      </class> <!-- automation.testsuite.Bepantoan_btvnday18 -->
-      <class name="automation.testsuite.DienmayHungAnh_btvnday18">
-        <test-method is-config="true" signature="openFirefox(java.lang.String)[pri:0, instance:automation.testsuite.DienmayHungAnh_btvnday18@17f9d882]" started-at="2024-09-17T23:05:11 ICT" name="openFirefox" finished-at="2024-09-17T23:05:26 ICT" duration-ms="15426" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[firefox]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- openFirefox -->
-        <test-method signature="CallZalo()[pri:0, instance:automation.testsuite.DienmayHungAnh_btvnday18@17f9d882]" started-at="2024-09-17T23:05:26 ICT" name="CallZalo" finished-at="2024-09-17T23:06:31 ICT" duration-ms="64776" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[expected [true] but found [false]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertTrue(Assert.java:45)
-at org.testng.Assert.assertTrue(Assert.java:55)
-at automation.testsuite.DienmayHungAnh_btvnday18.CallZalo(DienmayHungAnh_btvnday18.java:36)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- CallZalo -->
-      </class> <!-- automation.testsuite.DienmayHungAnh_btvnday18 -->
-    </test> <!-- Regresstion test testsuite on firefox -->
-  </suite> <!-- TestSuite -->
+        </test-method> <!-- LoctheoDanhmuc -->
+      </class> <!-- automation.testsuite.TBNB -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

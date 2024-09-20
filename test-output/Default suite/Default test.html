@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Sep 17 22:36:37 ICT 2024</td>
+<td>Started on:</td><td>Fri Sep 20 21:35:38 ICT 2024</td>
 </tr>
-<tr><td>Total time:</td><td>80 seconds (80883 ms)</td>
+<tr><td>Total time:</td><td>30 seconds (30908 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,14 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='automation.testsuite.Bepantoan_btvnday18.CallZalo()'><b>CallZalo</b><br>Test class: automation.testsuite.Bepantoan_btvnday18</td>
-<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//span[text()=&apos;Chat với chúng tôi&apos;])[1] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240819150008, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14484, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 3e497077-e94b-494a-80ca-1f972ecd3990
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at automation.common.commonBase.getElementPresentDOM(commonBase.java:80)
-	at automation.common.commonBase.click(commonBase.java:122)
-	at automation.testsuite.Bepantoan_btvnday18.CallZalo(Bepantoan_btvnday18.java:23)
+<td title='automation.testsuite.TBNB.LoctheoDanhmuc()'><b>LoctheoDanhmuc</b><br>Test class: automation.testsuite.TBNB</td>
+<td><div><pre>java.lang.AssertionError: MÁY SẤY CHÉN BÁT expected [MÁY SẤY CHÉN BÁT] but found [Giá trị không khớp cho thẻ 1]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at automation.testsuite.TBNB.LoctheoDanhmuc(TBNB.java:68)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -113,18 +109,14 @@ Session ID: 3e497077-e94b-494a-80ca-1f972ecd3990
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-</pre></div><a href='#' onClick='toggleBox("stack-trace1517266286", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1517266286'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element located by By.xpath: (//span[text()=&apos;Chat với chúng tôi&apos;])[1] (tried for 60 second(s) with 500 milliseconds interval)
-Build info: version: &apos;4.11.0&apos;, revision: &apos;040bc5406b&apos;
-System info: os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;22.0.1&apos;
-Driver info: org.openqa.selenium.firefox.FirefoxDriver
-Capabilities {acceptInsecureCerts: true, browserName: firefox, browserVersion: 129.0.2, moz:accessibilityChecks: false, moz:buildID: 20240819150008, moz:geckodriverVersion: 0.35.0, moz:headless: false, moz:platformVersion: 10.0, moz:processID: 14484, moz:profile: C:\Users\Admin\AppData\Loca..., moz:shutdownTimeout: 60000, moz:webdriverClick: true, moz:windowless: false, pageLoadStrategy: normal, platformName: windows, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, userAgent: Mozilla/5.0 (Windows NT 10....}
-Session ID: 3e497077-e94b-494a-80ca-1f972ecd3990
-	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:230)
-	at automation.common.commonBase.getElementPresentDOM(commonBase.java:80)
-	at automation.common.commonBase.click(commonBase.java:122)
-	at automation.testsuite.Bepantoan_btvnday18.CallZalo(Bepantoan_btvnday18.java:23)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1016090398", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1016090398'><pre>java.lang.AssertionError: MÁY SẤY CHÉN BÁT expected [MÁY SẤY CHÉN BÁT] but found [Giá trị không khớp cho thẻ 1]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:629)
+	at automation.testsuite.TBNB.LoctheoDanhmuc(TBNB.java:68)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -152,8 +144,8 @@ Session ID: 3e497077-e94b-494a-80ca-1f972ecd3990
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
 </pre></div></td>
-<td>60</td>
-<td>automation.testsuite.Bepantoan_btvnday18@1ed6388a</td></tr>
+<td>8</td>
+<td>automation.testsuite.TBNB@1ed6388a</td></tr>
 </table><p>
 </body>
 </html>

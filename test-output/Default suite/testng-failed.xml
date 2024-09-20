@@ -3,12 +3,12 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.testsuite.Bepantoan_btvnday18">
+      <class name="automation.testsuite.TBNB">
         <methods>
-          <include name="CallZalo"/>
-          <include name="openFirefox"/>
+          <include name="LoctheoDanhmuc"/>
+          <include name="openFireFox"/>
         </methods>
-      </class> <!-- automation.testsuite.Bepantoan_btvnday18 -->
+      </class> <!-- automation.testsuite.TBNB -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
