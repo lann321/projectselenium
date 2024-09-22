@@ -34,16 +34,16 @@ public class TBNB extends commonBase{
 		String[] expectedValues = {
 		    "MÁY SẤY CHÉN BÁT", 
 		    "LÒ NƯỚNG ĐA NĂNG", 
-		    "Lò Vi Sóng",
-		    "Đồ gia dụng",
-		    "Máy Lọc Nước",
-		    "Tủ lạnh chính hãng",
-		    "Tủ rượu mẫu mã đẹp",
-		    "Viên rửa bát đa năng",
-		    "Quạt điều hoà",
-		    "Nồi chiên không dầu chính hãng",
-		    "Cây nước nóng lạnh giá rẻ, cay nuoc",
-		    "Máy Giặt",
+		    "LÒ VI SÓNG",
+		    "ĐỒ GIA DỤNG",
+		    "MÁY LỌC NƯỚC",
+		    "TỦ LẠNH CHÍNH HÃNG",
+		    "TỦ RƯỢU MẪU MÃ ĐẸP",
+		    "VIÊN RỬA BÁT ĐA NĂNG",
+		    "QUẠT ĐIỀU HÒA",
+		    "NỒI CHIÊN KHÔNG DẦU CHÍNH HÃNG",
+		    "CÂY NƯỚC NÓNG LẠNH GIÁ RẺ, CAY NUOC NONG LANH LOẠI NÀO TỐT?",
+		    "MÁY GIẶT",
 		    "   "
 		}; // Thay thế bằng các giá trị mong muốn cho từng thẻ
 
@@ -55,8 +55,9 @@ public class TBNB extends commonBase{
 
 		// Click vào từng thẻ và assert giá trị
 		for (int i = 0; i < count; i++) {
+			
 		    elements.get(i).click(); // Click vào phần tử
-		    pause(3000);
+		    pause(2000);
 		    
 		    // Assert giá trị sau khi click
 		    WebElement resultElement = driver.findElement(By.xpath("//div[@class='mb-1 xl:mb-5']")); 
@@ -65,17 +66,15 @@ public class TBNB extends commonBase{
 		    System.out.println("Giá trị mong muốn cho thẻ " + (i + 1) + ": " + expectedValues[i]); // In ra giá trị mong muốn
 
 		    // So sánh giá trị mong muốn và thực tế
-		    Assert.assertEquals("Giá trị không khớp cho thẻ " + (i + 1), expectedValues[i], actualValue);
-
-		    // Chờ 1 giây giữa các lần click
-		    try {
-		        Thread.sleep(1000);
-		    } catch (InterruptedException e) {
-		        e.printStackTrace();
-		    }
+		    Assert.assertEquals(expectedValues[i], actualValue,"Giá trị không khớp cho thẻ " + (i + 1));
+		    
+		    // Chờ 1 giâsy giữa các lần click
+		    pause(3000);
 
 		    // Quay lại trang trước
 		    driver.navigate().back();
+		    pause(3000);
+		    
 
 		    // Cập nhật lại danh sách các thẻ
 		    elements = driver.findElements(By.xpath("//div[@class='mb-1']")); // Cập nhật lại danh sách thẻ

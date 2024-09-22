@@ -1,62 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2024-09-20T21:35:38 ICT" name="Default suite" finished-at="2024-09-20T21:36:09 ICT" duration-ms="30908">
+  <suite started-at="2024-09-22T23:17:19 ICT" name="Default suite" finished-at="2024-09-22T23:17:37 ICT" duration-ms="17764">
     <groups>
     </groups>
-    <test started-at="2024-09-20T21:35:38 ICT" name="Default test" finished-at="2024-09-20T21:36:09 ICT" duration-ms="30908">
-      <class name="automation.testsuite.TBNB">
-        <test-method is-config="true" signature="openFireFox()[pri:0, instance:automation.testsuite.TBNB@1ed6388a]" started-at="2024-09-20T21:35:38 ICT" name="openFireFox" finished-at="2024-09-20T21:36:00 ICT" duration-ms="22162" status="PASS">
+    <test started-at="2024-09-22T23:17:19 ICT" name="Default test" finished-at="2024-09-22T23:17:37 ICT" duration-ms="17764">
+      <class name="automation.testsuite.ThietBiNhaBep">
+        <test-method is-config="true" signature="openFireFox()[pri:0, instance:automation.testsuite.ThietBiNhaBep@2e6a8155]" started-at="2024-09-22T23:17:20 ICT" name="openFireFox" finished-at="2024-09-22T23:17:31 ICT" duration-ms="11703" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- openFireFox -->
-        <test-method signature="LoctheoDanhmuc()[pri:1, instance:automation.testsuite.TBNB@1ed6388a]" started-at="2024-09-20T21:36:00 ICT" name="LoctheoDanhmuc" finished-at="2024-09-20T21:36:09 ICT" duration-ms="8614" status="FAIL">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[MÁY SẤY CHÉN BÁT expected [MÁY SẤY CHÉN BÁT] but found [Giá trị không khớp cho thẻ 1]]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: MÁY SẤY CHÉN BÁT expected [MÁY SẤY CHÉN BÁT] but found [Giá trị không khớp cho thẻ 1]
-at org.testng.Assert.fail(Assert.java:99)
-at org.testng.Assert.failNotEquals(Assert.java:1037)
-at org.testng.Assert.assertEqualsImpl(Assert.java:140)
-at org.testng.Assert.assertEquals(Assert.java:122)
-at org.testng.Assert.assertEquals(Assert.java:629)
-at automation.testsuite.TBNB.LoctheoDanhmuc(TBNB.java:68)
-at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
-at java.base/java.lang.reflect.Method.invoke(Method.java:580)
-at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
-at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
-at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
-at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
-at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
-at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
-at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
-at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
-at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
-at org.testng.TestRunner.privateRun(TestRunner.java:794)
-at org.testng.TestRunner.run(TestRunner.java:596)
-at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
-at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
-at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
-at org.testng.SuiteRunner.run(SuiteRunner.java:276)
-at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
-at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
-at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
-at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
-at org.testng.TestNG.runSuites(TestNG.java:1063)
-at org.testng.TestNG.run(TestNG.java:1031)
-at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
-at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:293)
-at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:91)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method signature="CheckBtnXemThem()[pri:0, instance:automation.testsuite.ThietBiNhaBep@2e6a8155]" started-at="2024-09-22T23:17:31 ICT" name="CheckBtnXemThem" finished-at="2024-09-22T23:17:36 ICT" duration-ms="4686" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoctheoDanhmuc -->
-      </class> <!-- automation.testsuite.TBNB -->
+        </test-method> <!-- CheckBtnXemThem -->
+        <test-method is-config="true" signature="CloseFireFox()[pri:0, instance:automation.testsuite.ThietBiNhaBep@2e6a8155]" started-at="2024-09-22T23:17:36 ICT" name="CloseFireFox" finished-at="2024-09-22T23:17:37 ICT" duration-ms="1317" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- CloseFireFox -->
+      </class> <!-- automation.testsuite.ThietBiNhaBep -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
